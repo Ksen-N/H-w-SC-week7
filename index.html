@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amita&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>Weather project</title>
+  </head>
+
+  <body>
+    <header><h1>What's the weather like today?</h1></header>
+    <div class="container">
+      <div class="weather-app">
+        <form class="search-form" id="search-form">
+          <div class="row">
+            <div class="col-8">
+              <input
+                type="search"
+                placeholder="Type a city"
+                autocomplete="off"
+                id="city-input"
+                class="form-control shadow p-2"
+              />
+            </div>
+            <div class="col-3">
+              <input
+                type="submit"
+                value="Search"
+                class="form-control btn btn-primary shadow p-1"
+              />
+            </div>
+            <button class="map" id="cur-location">🗺</button>
+          </div>
+        </form>
+        <div class="info">
+          <hr />
+          <h2 id="urcity"></h2>
+          <ul>
+            <li>Last updated: <a id="date" class="color"></a></li>
+            <li class="c-wind">Wind: <a id="wind" class="color"></a></li>
+            <li class="c-humid">Humidity: <a id="humid" class="color"></a></li>
+            <li id="desc" class="color"></li>
+          </ul>
+          <div class="row">
+            <div class="col-6">
+              <div class="clearfix weather-temperature">
+                <img
+                  src="http://openweathermap.org/img/wn/04d@2x.png"
+                  alt="Weather icon"
+                  id="w-icon"
+                  class="float-left"
+                />
+                <div class="float-left">
+                  <span class="temp" id="d-temp"></span>
+                  <span class="units">
+                    <a href="#" id="c-link" class="active">°C</a> |
+                    <a id="f-link" href="#">°F</a></span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="tips">
+                <h3>Tip of the day</h3>
+                <p class="quote">Trust but verify.<a id="w-tip"></a></p>
+                <a class="author">Ordinary Anonymous</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img src="src/img/sun.png" alt="sun" class="sun-icon float-left" />
+      </div>
+    </div>
+    <footer>
+      This page was built by
+      <a href="https://t.me/kse_nya22" target="_blank"> Ksenia Noskova </a>
+      <div class="contact">
+        <button
+          onclick="document.location='https://github.com/Ksen-N/H-w-SC-week7.git'"
+          alt="_blank"
+          class="git"
+        >
+          <img class="git-icon" src="src/img/git.png" alt="Github icon" />
+        </button>
+        <span
+          ><a
+            class="code-link"
+            href="https://github.com/Ksen-N/H-w-SC-week7.git"
+            alt="_blank"
+            ><em>Open-source code⤴</em></a
+          >
+        </span>
+      </div>
+    </footer>
+    <script src="src/index.js"></script>
+  </body>
+</html>
