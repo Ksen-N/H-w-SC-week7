@@ -1,0 +1,130 @@
+body {
+    background: rgb(255, 255, 255);
+  }
+  header {
+    color: #1177c9;
+    font-family: "Dosis", sans-serif;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+    padding-top: 10px;
+  }
+  .container {
+    background: #d9edfd;
+    padding-top: 35px;
+    padding-bottom: 265px;
+    max-width: 100%;
+    border-radius: 1px;
+  }
+  .weather-app {
+    background: rgb(255, 255, 255);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 15px;
+    margin: 20px auto;
+    border-radius: 7px;
+    max-width: 600px;
+  }
+  h2 {
+    color: #7c7c7c;
+    font-size: 35px;
+    font-weight: 900;
+    font-family: "Amatic SC", cursive;
+    line-height: 25px;
+    margin: 0;
+  }
+  
+  ul {
+    margin: 0 0 10px;
+    padding: 0;
+  }
+  
+  li {
+    color: #7c7c7c;
+    font-size: 16px;
+    font-weight: 200;
+    height: 19px;
+    line-height: 1.6;
+    list-style: none;
+  }
+  
+  .weather-icon {
+    height: 54px;
+    width: 64px;
+    margin-right: 10px;
+  }
+  
+  .temp {
+    color: rgb(33, 33, 33);
+    font-size: 62px;
+    font-weight: 450;
+    line-height: 1;
+  }
+  
+  .units {
+    position: relative;
+    top: -34px;
+  }
+  
+  .search-form {
+    margin-bottom: 20px;
+  }
+  h3 {
+    font-size: 26px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .quote {
+    font-family: "Amita", cursive;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+  }
+  .author {
+    font-family: "Tangerine", cursive;
+    font-size: 22px;
+    font-weight: 600;
+    float: right;
+  }
+  .sun-icon {
+    height: 250px;
+    width: 250px;
+    margin-right: 15px;
+    margin-left: -250px;
+    margin-bottom: 30px;
+    margin-top: -70px;
+    float: left;
+  }
+  footer {
+    color: #1177c9;
+    block: center;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 800;
+    padding-bottom: 15px;
+    margin-top: 25px;
+  }
+  .map {
+    background: hsl(49, 100%, 69%);
+    display: block;
+    margin-left: 25px;
+    color: white;
+    padding: 8px;
+    font-size: 14px;
+    border: 2px solid rgb(255, 255, 150);
+    border-radius: 7px;
+    box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.123);
+    transition: all 200ms ease-in-out;
+  }
+  
+  .map:hover {
+    opacity: 0.9;
+    cursor: pointer;
+    border: 2px solid rgb(255, 196, 0);
+    background: rgb(255, 196, 0);
+    box-shadow: 5px 5px 10px rgba(251, 255, 0, 0.377);
+  }
+  .clearfix {
+    margin-top: 5px;
+  }
+  
